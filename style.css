@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+
+:root{
+    --main-color:rgb(255, 111, 0);
+    --border:.1rem solid rgba(159, 158, 158, 0.867);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.containerr{
+    width:1250px;
+    margin:0 auto;
+    height: 1000px;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.headerr{
+    width:1250px;
+    height: 80px;
+    background: rgb(255, 111, 0);
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2%;
+    z-index: 1000;
+    
+}
+.headerr .navbarr a{
+    margin:0 1rem;
+    font-size:18px;
+    color:azure;
+}
+.headerr .navbarr a:hover{
+    color: aquamarine;
+    border-bottom: 1px solid aquamarine;
+    padding-bottom: 5px;
+}
+.headerr .navright{
+    margin-left: auto;
+}
+
+.headerr .navright a{
+    font-size:18px;
+    color:azure;
+    margin-left: 20px;
+}
+
+.headerrr .navright a:hover{
+    color: aquamarine;
+}
+
+.headerr img{
+    width: 100px;
+    height: 80px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.searchbox{
+    opacity: .6;
+    height: 60px;
+    position: relative;
+}
+
+.searchbox-button{
+    opacity: .6;
+    right: 9px;
+    top: -2px;
+    position: absolute;
+    border: 0px;
+    background: white;
+}
+
+#carouselExampleIndicators{
+    padding-top:10px;
+    width: 1100px;
+    height:380px;
+    background: gray;
+    align-items: center;
+    margin: auto;
+}
+
+/* Kích thước ảnh trong carousel */
+#carouselExampleIndicators img{
+    width: 200px;
+    height:300px;
+}
+.carousel-control-prev{
+    width: 30px;
+}
+
+.carousel-control-next{
+    width: 30px;
+}
+
+.chia{
+    height: 10px;
+    clear: both;
+}
+
+/* Truyện hot trong ngày */
+.hot{
+    width: 1100px;
+    height:30px;
+    background: gray;
+    font-size: 20px;
+    padding-left: 10px;
+    margin: auto;
+}
+
+.new{
+    width: 700px;
+    height:30px;
+    background: darkgray;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 75px;
+    float: left;
+    border: 1px solid black;
+}
+
+.newest{
+    width: 700px;
+    height:30px;
+    background: darkgray;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 75px;
+    float: left;
+    border: 1px solid black;
+}
+
+.social{
+    width: 30%;
+    height:30px;
+    background: darkgray;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 75px;
+    float: right;
+    border: 1px solid black;
+}
+
+/* Chia tỉ lệ 5 ảnh 1 hàng với mọi item */
+article .new-list .new-item{
+    width:20%;
+    padding:0.8%;
+    float:left;
+    margin-top: -55px;
+}
+
+article .new-list .new-item .content{
+    color: azure;
+    text-align: center;
+}
+/*--*/
+
+.left{
+    width: 700px;
+    float: left;
+    margin-left: 75px;
+    border: 1px solid black;
+    height: auto;
+    background: darkgray;
+    margin-bottom: 10px;
+}
+
+.right{
+    width: 30%;
+    float: right;
+    border: 1px solid black;
+    height: 300px;
+    margin-right: 75px;
+    background: darkgray;
+}
+
+.left .new-list .new-item{
+    margin-top: 10px;
+    width:25%;
+    padding:2%;
+    float:left;
+
+}
+
+.left .new-item{
+    float:left;
+}
+
+.left img{
+    width: 150px;
+    height: 240px;
+}
+
+.right .new-social{
+    border:1px solid black;
+    width: 90%;
+    height: 120px;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+.right .new-social img{
+    width:100%;
+    height: 100%;
+}
+
+.bottom{
+    width: 700px;
+    float: left;
+    margin-left: 75px;
+    border: 1px solid black;
+    height: auto;
+    background: darkgray;
+    margin-bottom: 10px;
+}
+
+.bottom .new-item{
+    float:left;
+}
+
+.bottom img{
+    width: 150px;
+    height: 240px;
+}
+
+.bottom .new-list .new-item{
+    margin-top: 10px;
+    width:25%;
+    padding:2%;
+    float:left;
+
+}
+
+.menu_child{
+    position: absolute;
+    top:100%;
+    left: 150px;
+    width: 800px;
+    height: auto;
+    background: linear-gradient(to right, rgb(220, 219, 219), rgb(255, 111, 0));
+    display: none;
+    /* opacity: 0;
+    visibility: hidden; */
+}
+
+.new_special_item:hover + .menu_child {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu_child_item{
+    width: 20%;
+    padding: 1%;
+    font-size: 1rem;
+}
+
+.headerr .navbarr .menu_child_item a{
+    margin: auto;
+    font-size: 1rem;
+    color: black;
+}
+
+.menu_child_list li{
+    padding: 0.5rem;
+}
+
+.headerr{
+    position: relative;
+}
+
+.new_special_item{
+    cursor: pointer;
+    position: relative;
+}
+
+.menu_child.show {
+    display: flex;
+}
+
+#back{
+    width: 40px;
+    height: 40px;
+    color: dodgerblue;
+    background: rgba(121, 130, 131, 0.7);
+    padding-left: 11.5px;
+    padding-top: 9px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    cursor: pointer;
+}

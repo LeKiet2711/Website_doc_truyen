@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Link rel="stylesheet" href="Register.css">
+    <link href="./font/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="./font/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="./font/fontawesome/css/solid.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div class="containerr">
+        <form action="" onsubmit="return register()">
+            <h1>Đăng kí thành viên</h1>
+                <div class="box">
+                    <input id="username" type="text" placeholder="Tên đầy đủ" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="box">
+                    <input id="email" type="text" placeholder="Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="box">
+                    <input id="password" type="password" placeholder="Mật khẩu" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="box">
+                    <input id="confirmpassword" type="password" placeholder="Nhập lại mật khẩu" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="return">
+                    Đã có tài khoản!<a href="Login.html"> Đăng nhập ngay</a></br>
+                    <a href="index.html"> Trở về trang chủ</a>
+                </div>
+        </form>
+    </div>
+    <script src="jv.js"></script>
+</body>
+
+</html>
